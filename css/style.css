@@ -261,7 +261,7 @@ textarea {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 header {
@@ -269,6 +269,10 @@ header {
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
+}
+
+header img {
+  margin-right: -1rem;
 }
 
 .header-wrapper {
