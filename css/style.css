@@ -12,8 +12,8 @@
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: calc(18px + 0.390625vw);
+  color: #444;
+  font-size: calc(16px + 0.390625vw);
   line-height: 1.4;
   font-family: arial, sans-serif;
 }
@@ -277,6 +277,10 @@ header img {
 
 .header-wrapper {
   background: #222222;
+}
+
+.header-wrapper .container {
+  max-width: 100%;
 }
 
 h1 {
