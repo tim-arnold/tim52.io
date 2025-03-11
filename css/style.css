@@ -300,7 +300,7 @@ h1 {
 .footer-wrapper {
   margin-top: auto;
   background: #222222 url("../img/cow.webp") 100% -200px no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 .footer-wrapper .container {
@@ -316,5 +316,6 @@ footer {
 
 footer p {
   color: #fff;
+  background: #000;
 }
 
