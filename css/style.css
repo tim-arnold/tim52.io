@@ -327,12 +327,14 @@ dt strong {
   padding: 0 .25rem;
 }
 
-dd a {
+dd a,
+dd a:visited  {
   text-decoration: none;
   display: inline-block;
   position: relative;
   transition: all .20s ease-in-out;
   padding: 0 .25rem;
+  color: #004fea;
 }
 
 dd a:hover {
@@ -350,7 +352,7 @@ dd a:after {
   bottom: 0;
   left: 0;
   transition: all .20s ease-in-out;
-  background: blue;
+  background: #004fea;
 }
 
 dd a:hover:after {
