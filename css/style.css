@@ -271,7 +271,8 @@ header {
   align-items: center;
 }
 
-header a{
+header a,
+header a:visited {
   color: #fff;
   text-decoration: none;
 }
