@@ -320,6 +320,58 @@ dd {
   width: calc(100% - 7rem);
 }
 
+dt strong {
+  color: #fff;
+  background: #000;
+  padding: 0 .25rem;
+}
+
+dd a {
+  text-decoration: underline;
+  display: inline-block;
+  position: relative;
+}
+
+dd a:hover {
+  text-decoration: none;
+}
+
+dd a:after,
+dd a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  margin-top: 4px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+
+}
+
+dd a:before {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+}
+
+dd a:after {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+dd a:hover:after,
+dd a:hover:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
 .footer-wrapper {
   margin-top: auto;
   background: #222222 url("../img/cow.webp") 100% -200px no-repeat;
