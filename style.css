@@ -365,7 +365,7 @@ dd a:hover:after {
 
 .footer-wrapper {
   margin-top: auto;
-  background: #222222 url("../img/cow.webp") 100% -200px no-repeat;
+  background: #222222 url("img/cow.webp") 100% -200px no-repeat;
   background-size: auto;
 }
 
