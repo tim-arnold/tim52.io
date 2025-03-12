@@ -324,7 +324,7 @@ dd {
 dt strong {
   color: #fff;
   background: #000;
-  padding: 0 .25rem;
+  padding: .15rem .25rem;
 }
 
 dd a,
@@ -359,6 +359,7 @@ dd a:hover:after {
   bottom: 0;
   height: 100%;
   transition: height .20s ease-in-out;
+  background: #000;
 }
 
 
