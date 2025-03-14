@@ -307,21 +307,19 @@ dl {
   display: grid;
   grid-template-columns: auto 1fr;
   row-gap: .5rem;
+  column-gap: .5rem;
 }
 
 dt, dd {
   margin: 0;
-  height: 28px;
 }
 
 dt {
   clear: left;
-  width: 6rem;
   text-align: right;
 }
 
 dd {
-  margin-left: 0;
   width: calc(100% - 7rem);
 }
 
@@ -331,15 +329,10 @@ dt strong {
   padding: .15rem .25rem;
 }
 
-dd span {
-  padding-left: .25rem;
-}
-
 dd a,
 dd a:visited  {
   text-decoration: none;
   display: inline-block;
-  height: 28px;
   position: relative;
   transition: all .20s ease-in-out;
   padding: 0 .25rem;
@@ -351,22 +344,22 @@ dd a:hover {
   transition: all .20s ease-in-out;
 }
 
-dd a:before {
+dd a:after {
   content: '';
-  position: absolute;
   display: block;
   height: .10rem;
   width: 100%;
+  position: absolute;
   z-index: -1;
   bottom: 0;
   left: 0;
   transition: all .20s ease-in-out;
-  background: #000;
+  background: #004fea;
 }
 
-dd a:hover:before {
-  bottom: .5px;
-  height: calc(100%);
+dd a:hover:after {
+  bottom: 0;
+  height: 100%;
   transition: height .20s ease-in-out;
   background: #000;
 }
