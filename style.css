@@ -187,26 +187,39 @@ header img {
 
 .header-wrapper {
   background: #222222;
-}
-
-.header-wrapper .container {
-
+  margin-bottom: 2rem;
 }
 
 h1 {
   color: #fff;
 }
 
+p {
+  margin-top: 0;
+}
+
 .content-wrapper {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 2rem;
 }
 
 main {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
 
+@media (min-width: 105ch) {
+  main {
+    flex-direction: row;
+  }
+}
+
+article {
+  max-width: 70ch;
 }
 
 dl {
+  align-content: start;
   margin: 0;
   padding: 0;
   display: grid;
