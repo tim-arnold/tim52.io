@@ -11,8 +11,26 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
+:root {
+  --primary-color: #444;
+  --page-color: #444;
+  --page-background-color: #fff;
+  --header-text-color: #fff;
+  --link-color: #004fea;
+  --link-hover-bg-color: #000;
+}
+/**
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background-color: #000;
+    --page-color: #fff;
+    --link-color: #fff;
+    --link-hover-bg-color: #fff;
+  }
+}
+**/
 html {
-  color: #444;
   font-size: calc(16px + 0.390625vw);
   line-height: 1.4;
   font-family: arial, sans-serif;
@@ -24,6 +42,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  color: var(--page-color);
+  background: var(--page-background-color);
 }
 
 /*
@@ -175,7 +195,7 @@ header {
 
 header a,
 header a:visited {
-  color: #fff;
+  color: var(--header-text-color);
   text-decoration: none;
 }
 
@@ -186,12 +206,12 @@ header img {
 }
 
 .header-wrapper {
-  background: #222222;
+  background: var(--primary-color);
   margin-bottom: 2rem;
 }
 
 h1 {
-  color: #fff;
+  color: var(--header-text-color);
 }
 
 p {
@@ -243,7 +263,7 @@ dd {
 
 dt strong {
   color: #fff;
-  background: #000;
+  background: var(--primary-color);
   padding: .15rem .25rem;
 }
 
@@ -254,11 +274,11 @@ dd a:visited  {
   position: relative;
   transition: all .20s ease-in-out;
   padding: 0 .25rem;
-  color: #004fea;
+  color: var(--link-color);
 }
 
 dd a:hover {
-  color: #fff;
+  color: var(--page-background-color);
   transition: all .20s ease-in-out;
 }
 
@@ -272,20 +292,20 @@ dd a:after {
   bottom: 0;
   left: 0;
   transition: all .20s ease-in-out;
-  background: #004fea;
+  background:var(--link-color);
 }
 
 dd a:hover:after {
   bottom: 0;
   height: 100%;
   transition: height .20s ease-in-out;
-  background: #000;
+  background: var(--link-hover-bg-color);
 }
 
 
 .footer-wrapper {
   margin-top: auto;
-  background: #222222 url("img/cow.webp") 100% -200px no-repeat;
+  background: var(--primary-color) url("img/cow.webp") 100% -200px no-repeat;
   background-size: auto;
 }
 
@@ -296,7 +316,7 @@ footer {
 }
 
 footer p {
-  color: #fff;
+  color: var(--header-text-color);
   background: #000;
 }
 
